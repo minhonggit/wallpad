@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CheckingWindow</class>
+ <widget class="QMainWindow" name="CheckingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>761</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Gmarket Sans TTF</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>    기기 보안 점검하기  &gt;  점검 항목 선택하기  &gt;  점검 진행</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>530</y>
+      <width>761</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gmarket Sans TTF</family>
+      <pointsize>15</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>541</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="font">
+        <font>
+         <family>Gmarket Sans TTF</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>점검 항목</string>
+       </property>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>521</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>52</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>관리서비스 및 중요정보 접근 시 사용자 신원을 검증하기 위해 식별 및 인증 선행 여부</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>53</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>중요정보 전송 또는 저장 시 안전한 암호 알고리즘 사용 여부</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>52</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>알려진 프로토콜 기반으로 통신채널 생성 시 안전한 보안모드 사용 여부</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>80</y>
+      <width>101</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="font">
+        <font>
+         <family>Gmarket Sans TTF</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>위험도</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>81</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_5">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>52</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>상</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_6">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>53</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>중</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_7">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>52</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>상</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>80</y>
+      <width>101</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="font">
+        <font>
+         <family>Gmarket Sans TTF</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>결과</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>81</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_8">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>52</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>미흡</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_9">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>53</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>점검 중</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_10">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>52</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Gmarket Sans TTF</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>점검 중</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

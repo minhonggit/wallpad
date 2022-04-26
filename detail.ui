@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultWindow</class>
+ <widget class="QMainWindow" name="ResultWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>761</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Gmarket Sans TTF</family>
+         <pointsize>18</pointsize>
+         <bold>false</bold>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>    기기 보안 점검하기  &gt;  점검 항목 선택하기  &gt;  점검 진행  &gt;  점검 결과  &gt;  취약 항목 상세</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>191</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>점검 일시 : 2022-04-25 14:50:21</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>170</y>
+      <width>371</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(179, 179, 179);</string>
+       </property>
+       <property name="text">
+        <string>조치방법 들어가는 자리</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>510</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>뒤로 가기</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Gmarket Sans TTF</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(153, 153, 153);</string>
+       </property>
+       <property name="text">
+        <string>취약 항목 개요</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>371</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(153, 153, 153);</string>
+       </property>
+       <property name="text">
+        <string>개요 들어가는 자리</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>100</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>Gmarket Sans TTF</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(179, 179, 179);</string>
+       </property>
+       <property name="text">
+        <string>조치 방법 안내</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
